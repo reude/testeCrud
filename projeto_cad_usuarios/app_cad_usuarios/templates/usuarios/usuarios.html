@@ -1,7 +1,7 @@
 {% extends 'usuarios/base.html' %}
 {% block conteudo %}
 <div class="container">
-    <h1>Usuários Cadastrados:</h1>
+    <h1 style="margin: 25px;">Usuários Cadastrados:</h1>
     <table class="table table-borded table-striped">
         <tr>
             <th>nome</th>
@@ -15,4 +15,10 @@
         {% endfor %}
     </table>
 </div>
+
+<div style="text-align: center;" class="container">
+    <a href="{% url 'home' %}">
+      <tbuton style="margin: 50px;" class="btn btn-outline-dark form-control-sm">Voltar</tbuton>
+    </a>
+  </div>
 {% endblock %}
